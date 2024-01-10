@@ -1,7 +1,7 @@
-provider "kubernetes" {
+provider "minikube" {
   config_path = "~/.minicube/config"
 }
-resource "kubernetes_namespace" "application" {
+resource "minikube_namespace" "application" {
   metadata {
     name = "application"
     labels = {
