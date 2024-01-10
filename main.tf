@@ -2,7 +2,7 @@ terraform {
   required_providers {
     minikube = {
       source  = "hashicorp/minikube"
-      version = "v1.28.3"  # Укажите версию провайдера
+      version = "v1.6.6"  # Укажите версию провайдера
     }
   }
 }
