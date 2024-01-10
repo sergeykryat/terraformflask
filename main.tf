@@ -7,7 +7,7 @@ terraform {
   }
 }
 provider "minikube" {
-  config_path = "~/.minicube/config"
+  config_path = "~/.minikube/config"
 }
 resource "minikube_namespace" "application" {
   metadata {
