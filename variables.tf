@@ -1,11 +1,10 @@
-variable "limits" {
-  description = "Limits for the application namespace"
+variable "name" {
   type        = string
-  default     = "100m"
-}
+  nullable    = false
+  description = "The name of the namespace."
 
-variable "rbac" {
-  description = "Enable RBAC for the application namespace"
-  type        = bool
-  default     = true
+  validation {
+    condition     = var.name != ""
+    error_message = "The name of the namespace cannot be null or empty."
+  }
 }
